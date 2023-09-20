@@ -7,10 +7,11 @@ use std::env;
 fn main() {
     let arguments: Vec<String> = env::args().collect();
 
-    let input_name = &arguments[0];
-    let output_name = &arguments[1];
+    let input_name = &arguments[1].trim().to_string();
+    let output_name = &arguments[2].trim().to_string();
+   
 
-    let mut image = load::loadImage("obama.jpeg").unwrap();
+    let mut image = load::loadImage(input_name).unwrap();
 
     match flip::flipImage(&image, "vertical") {
         Ok(flipped_image) => {
