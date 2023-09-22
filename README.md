@@ -16,7 +16,7 @@ cd image-manipulator
 
 
 ## Usage
-"h" or "horozontal" / "v" or "vertical" to change the flip type
+"h" or "horizontal" / "v" or "vertical" to change the flip type
 ```
 ~ im input.png output.png v
 Image Flip Success
