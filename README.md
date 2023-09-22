@@ -1,4 +1,4 @@
-<img width="521" alt="image" src="https://github.com/pwn4d/image-manipulator/assets/86152883/a1dc60a8-fad0-4189-b2aa-48567526dbac">#  image manipulator
+#  image manipulator
 
 
 
