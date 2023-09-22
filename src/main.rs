@@ -12,11 +12,7 @@ fn main() {
     let output_name = &arguments[2].trim().to_string();
     let invert = &arguments[3].trim().to_string();
     let mut flip_type_str = &arguments[3];
-    let invert_enabled = false;
-    let flip_enabled = false;
-
-
-
+  
 
 
     let flip_type = match flip_type_str.to_lowercase().as_str() {   
