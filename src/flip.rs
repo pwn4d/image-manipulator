@@ -1,9 +1,13 @@
 use image::{DynamicImage, ImageError};
-
-pub fn flipImage(image: &DynamicImage, flip_type: &str) -> Result<DynamicImage, ImageError> {
-    let flipped_image = if flip_type == "horizontal" {
+#[derive(Eq, PartialEq)]
+pub enum FlipType {
+    Vertical,
+    Horizontal,
+}
+pub fn flip_image(image: &DynamicImage, flip_type: FlipType) -> Result<DynamicImage, ImageError> {
+    let flipped_image = if flip_type == FlipType::Horizontal {
         image.fliph()
-    } else if flip_type == "vertical" {
+    } else if flip_type == FlipType::Vertical {
         image.flipv()
     } else {
         return Err(ImageError::IoError(std::io::Error::new(
